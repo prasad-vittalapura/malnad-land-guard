@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 const Hero = () => {
     const images = [
         '/assets/images/alert.png',
-        '/assets/images/plantation.jpg',
-        '/assets/images/open-land.jpg'
+        '/assets/images/inspection-land.png',
+        '/assets/images/inspection-paddy.png'
     ];
 
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -35,7 +35,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    <h1>Away From Your Property? <br /> We're Watching Over It</h1>
+                    <h1>Away From Your Property? <br /> We Monitor It For You</h1>
                     <p className='buttom-line'>We regularly check your land, send real photos, and alert you if anything looks wrong.</p>
                     <div className="hero-buttons">
                         <a href="#plans" className="cta-button">View Plans</a>

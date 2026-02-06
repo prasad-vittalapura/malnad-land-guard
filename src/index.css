@@ -197,6 +197,8 @@ nav {
   transition: opacity 1s ease-in-out;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .slide.active {
@@ -496,11 +498,16 @@ footer {
 
   .hero-content {
     padding: 1rem;
+    max-width: 90%;
   }
 
   .hero-buttons {
     flex-direction: column;
     gap: 0.75rem;
+  }
+
+  .slide {
+    background-attachment: scroll;
   }
 
   .footer-content {
@@ -574,6 +581,53 @@ footer {
 
   h2 {
     font-size: 3rem;
+  }
+}
+
+/* Tablet Responsive (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero-content {
+    max-width: 95%;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .slide {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Small mobile (480px and below) */
+@media (max-width: 480px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-content {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  .buttom-line {
+    font-size: 0.875rem;
+  }
+
+  .slide {
+    background-size: cover;
+    background-position: center;
   }
 }
 
